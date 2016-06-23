@@ -9,4 +9,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.ciandt.blocodenotas.app.activities.NoteDetailActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noteId"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noteText"
+        android:layout_below="@+id/noteId"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveNote"
+        android:text="@string/salvar"
+        android:layout_below="@+id/noteText"/>
+
 </RelativeLayout>

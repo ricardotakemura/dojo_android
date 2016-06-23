@@ -2,10 +2,12 @@ package br.com.ciandt.blocodenotas.app.entity;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
+
 /**
  * Created by wbatista on 6/1/16.
  */
-public class Note {
+public class Note implements Serializable {
 
     @SerializedName("note")
     private String note;

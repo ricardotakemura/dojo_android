@@ -10,6 +10,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activities.BlocoDeNotasActivity">
         </activity>
+        <activity android:name=".activities.NoteDetailActivity">
+        </activity>
         <activity android:name=".activities.SplashScreenActivity"
             android:noHistory="true">
 

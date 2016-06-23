@@ -1,5 +1,6 @@
 package br.com.ciandt.blocodenotas.app.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -71,7 +72,10 @@ public class BlocoDeNotasActivity extends AppCompatActivity {
         this.mListViewNotes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(BlocoDeNotasActivity.this, "Note : [" + mAdapter.getItem(position).getNote() + "] clicked", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(BlocoDeNotasActivity.this, "Note : [" + mAdapter.getItem(position).getNote() + "] clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(BlocoDeNotasActivity.this, NoteDetailActivity.class);
+                intent.putExtra("note", mAdapter.getItem(position));
+                startActivity(intent);
             }
         });
     }
